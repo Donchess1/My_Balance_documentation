@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'MyBalance',
   tagline: 'Your reliable payment gateway',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/mybalance.svg',
 
   // Set the production url of your site here
   url: 'https://mybalance.com',
@@ -71,7 +71,7 @@ const config: Config = {
       title: 'My Site',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/mybalance.svg',
       },
       items: [
         {
