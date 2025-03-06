@@ -13,12 +13,12 @@ const config: Config = {
   url: 'https://mybalance.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/My_Balance_documentation/',
+  baseUrl: '/docs',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'My-Balance', // Usually your GitHub org/user name.
-  projectName: 'My_Balance_documentation', // Usually your repo name.
+  organizationName: 'Donchess1', // Usually your GitHub org/user name.
+  projectName: 'mybalance.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
