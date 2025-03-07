@@ -1,47 +1,56 @@
 
 ----------------------------------------------------------------------------------
-## merchants dashboard customer-transactions list
-* Endpoint: `GET v1/merchants/dashboard/customer-transactions?status=<string>&created=<string>&type=<string>&reference=<string>&provider=MYBALANCE&currency=<string>&email=<string>&mode=<string>&amount_lt=<string>&amount_gt=<string>&amount_lte=<string>&amount_gte=<string>&amount_exact=<string>&search=<string>&page=<integer>&size=<integer>`
+## merchants profile-info partial update
+* Endpoint: `GET v1/merchants/settlements?status=<string>&created=<string>&type=<string>&reference=<string>&provider=MYBALANCE&currency=<string>&email=<string>&mode=<string>&amount_lt=<string>&amount_gt=<string>&amount_lte=<string>&amount_gte=<string>&amount_exact=<string>&search=<string>&page=<integer>&size=<integer>`
 * Purpose: 
 
 ## Authorization
+
 ```json
-API key
+Bearer Token
 ```
+Query Params
+status "string"            status
 
-Path Variables
-```json
-id "string"                     (Required)
-```
+created "string"           created
 
-## Query Params
-```json
-priority "string"            priority
+type "string"              type
 
-source "string"              source
+reference "string"         reference
 
-status "string"              status
+providerMYBALANCE         provider
 
-author "string"              author
+currency "string"          currency
 
-created "string"             created
+email "string"             email
 
-email "string"               email
+mode "string"              mode
 
-search "string"              A search term.
+amount_lt "string"         amount_lt
 
-page "integer"               A page number within the paginated result set.
+amount_gt "string"         amount_gt
 
-size "integer"               Number of results to return per page.
-```
+amount_lte "string"        amount_lte
+
+amount_gte "string"        amount_gte
+
+amount_exact "string"      amount_exact
+
+search "string"            A search term.
+
+page "integer"             A page number within the paginated result set.
+
+size "integer"             Number of results to return per page.
 
 > Body parameter
+```json
+{  }
+```
+
+> 200 Response
 
 ```json
-{ }
-```
-Body parameter
-```json
+{
   "count": "<integer>",
   "results": [
     {
@@ -79,5 +88,6 @@ Body parameter
   ],
   "next": "<uri>",
   "previous": "<uri>"
+}
 ```
 ----------------------------------------------------------------------------------

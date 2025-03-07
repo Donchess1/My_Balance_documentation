@@ -1,7 +1,7 @@
 
 ----------------------------------------------------------------------------------
 ## transaction list
-* Endpoint: `POST v1/transaction/?search=<string>&page=<integer>&size=<integer>`
+* Endpoint: `GET v1/transaction/?search=<string>&page=<integer>&size=<integer>`
 * Purpose: Lock funds for escrow transaction as a buyer
 
 ## Authorization
